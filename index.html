@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <div class="logo-container">
+          <img src="images/odin-lined.png" alt="logo image" />
+          <h1>Neez</h1>
+        </div>
+      </div>
+      <div class="right">
+        <div class="desc-p section-center">
+          <p class="desc">
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams. Sign up
+            <em>now</em> to get started.
+            <br />
+            <br />
+            You <em>know</em> you want to.
+          </p>
+        </div>
+        <form action="#" method="post">
+          <div class="form section-center">
+            <legend>Let's do this!</legend>
+            <ul>
+              <li>
+                <label for="firstName">FIRST NAME</label>
+                <input
+                  type="text"
+                  id="firstName"
+                  name="first_name"
+                  required
+                  oninvalid="this.setCustomValidity('A first name is required.')"
+                />
+              </li>
+              <li>
+                <label for="lastName">LAST NAME</label>
+                <input
+                  type="text"
+                  id="lastName"
+                  name="last_name"
+                  required
+                  oninvalid="this.setCustomValidity('A last name is required.')"
+                />
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <label for="email">EMAIL</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  oninvalid="this.setCustomValidity('A valid mail address is required.')"
+                />
+              </li>
+              <li>
+                <label for="phoneNumber">PHONE NUMBER</label>
+                <input
+                  type="text"
+                  id="phoneNumber"
+                  name="phone_number"
+                  required
+                  oninvalid="this.setCustomValidity('A valid phone number is required.')"
+                />
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <label for="password">PASSWORD</label>
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  required
+                  oninvalid="this.setCustomValidity('A valid password is required. Please check.')"
+                />
+              </li>
+              <li>
+                <label for="confirmPassword">CONFIRM PASSWORD</label>
+                <input
+                  type="password"
+                  id="confirmPassword"
+                  name="confirmPassword"
+                  required
+                  oninvalid="this.setCustomValidity('Password must match.')"
+                />
+              </li>
+            </ul>
+          </div>
+          <div class="submit-section section-center">
+            <button type="submit" id="submit-btn">Create account</button>
+            <p>Already have an account? <a href="#">Log in</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
